@@ -5,7 +5,7 @@ import Foundation
 /// the user taps Check for Updates.
 public enum UpdateChecker {
     /// All releases, newest first. Only `macos-v*` tags count.
-    public static let apiReleases = URL(string: "https://api.github.com/0xdchu/sitting-time/releases")!
+    public static let apiReleases = URL(string: "https://api.github.com/repos/0xdchu/sitting-time/releases")!
 
     public enum Status: Sendable, Equatable {
         case current
