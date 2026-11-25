@@ -21,7 +21,7 @@ if [ -z "$BUILD" ]; then
 fi
 NOTES="${3:-Release macOS v$VERSION}"
 DMG="$ROOT/dist/SittingTime.dmg"
-REPO="0xdonniechu/sitting-time"
+REPO="0xdchu/sitting-time"
 TAG="macos-v$VERSION"
 
 echo "==> Bump $VERSION ($BUILD)"
@@ -55,8 +55,8 @@ if [ -n "$MATCHES" ]; then echo "FAIL: possible secret:"; echo "$MATCHES"; exit 
 echo "clean"
 
 echo "==> Commit + push"
-git -c user.name=0xdonniechu -c user.email=0xdonniechu@users.noreply.github.com add -A
-git -c user.name=0xdonniechu -c user.email=0xdonniechu@users.noreply.github.com commit -m "macOS v$VERSION: $NOTES"
+git -c user.name=0xdchu -c user.email=211609259+0xdchu@users.noreply.github.com add -A
+git -c user.name=0xdchu -c user.email=211609259+0xdchu@users.noreply.github.com commit -m "macOS v$VERSION: $NOTES"
 git -c credential.helper='!f() { echo username=x-access-token; echo "password=$GH_TOKEN"; }; f' push origin main
 
 echo "==> Release $TAG"

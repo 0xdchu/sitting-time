@@ -301,10 +301,10 @@ fn get_app_info() -> AppInfo {
     AppInfo {
         version: env!("CARGO_PKG_VERSION").to_string(),
         author: "0xdonniechu".to_string(),
-        author_url: "https://github.com/0xdonniechu".to_string(),
-        bug_url: "https://github.com/0xdonniechu/sitting-time/issues/new".to_string(),
+        author_url: "https://github.com/0xdchu".to_string(),
+        bug_url: "https://github.com/0xdchu/sitting-time/issues/new".to_string(),
         donate_url: "https://ko-fi.com/0xdonniechu".to_string(),
-        repo_url: "https://github.com/0xdonniechu/sitting-time".to_string(),
+        repo_url: "https://github.com/0xdchu/sitting-time".to_string(),
     }
 }
 

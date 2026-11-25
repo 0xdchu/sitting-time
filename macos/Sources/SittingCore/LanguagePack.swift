@@ -33,7 +33,7 @@ public enum LanguagePacks {
     /// Where the app fetches `vi.json`. Must stay publicly reachable: the
     /// app downloads it without credentials. Update if packs move hosts.
     public static let vietnameseURL = URL(
-        string: "https://raw.githubusercontent.com/0xdonniechu/sitting-time/main/macos/Resources/LanguagePacks/vi.json"
+        string: "https://raw.githubusercontent.com/0xdchu/sitting-time/main/macos/Resources/LanguagePacks/vi.json"
     )!
 
     private final class State: @unchecked Sendable {

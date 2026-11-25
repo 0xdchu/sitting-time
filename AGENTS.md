@@ -1,6 +1,6 @@
 # Instructions for Future Coding Agents
 
-- This repository belongs to `0xdonniechu`. Apply Ambysto-specific accounts, approvals, and shared-memory workflows only inside Ambysto-owned repositories; keep SittingTime guidance here unless the owner asks to share it elsewhere.
+- This repository belongs to `0xdchu` (renamed from 0xdonniechu, 2026-11-25). Apply Ambysto-specific accounts, approvals, and shared-memory workflows only inside Ambysto-owned repositories; keep SittingTime guidance here unless the owner asks to share it elsewhere.
 - Keep the app lightweight and Windows-first.
 - Keep timer business logic primarily in Rust; the frontend is a renderer and command client.
 - Store timestamps/deadlines, not interval counters, as the source of truth.
