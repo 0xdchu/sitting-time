@@ -1230,6 +1230,14 @@ func solarDate(_ year: Int, _ month: Int, _ day: Int) -> Date {
         #expect(UpdateChecker.latestVersion(in: Data(#"[{"tag_name":"macos-vbeta"}]"#.utf8)) == nil)
     }
 
+    /// GitHub's REST path for a repo's releases is /repos/<owner>/<repo>/releases;
+    /// without /repos/ the API answers 404 and every check showed "failed".
+    @Test func releasesURLIsTheRESTRepoPath() {
+        #expect(UpdateChecker.apiReleases.host == "api.github.com")
+        #expect(UpdateChecker.apiReleases.path.hasPrefix("/repos/"))
+        #expect(UpdateChecker.apiReleases.path.hasSuffix("/sitting-time/releases"))
+    }
+
     @Test func comparesVersionsNumerically() {
         #expect(UpdateChecker.compareVersions("1.1.10", "1.1.3") == .orderedDescending)
         #expect(UpdateChecker.compareVersions("1.1.3", "1.1.10") == .orderedAscending)
