@@ -5,7 +5,7 @@ import Foundation
 /// the user taps Check for Updates.
 public enum UpdateChecker {
     /// All releases, newest first. Only `macos-v*` tags count.
-    public static let apiReleases = URL(string: "https://api.github.com/0xdonniechu/sitting-time/releases")!
+    public static let apiReleases = URL(string: "https://api.github.com/0xdchu/sitting-time/releases")!
 
     public enum Status: Sendable, Equatable {
         case current
@@ -46,7 +46,7 @@ public enum UpdateChecker {
 
     /// Download page for a macOS release.
     public static func releasePageURL(version: String) -> URL {
-        URL(string: "https://github.com/0xdonniechu/sitting-time/releases/tag/macos-v\(version)")!
+        URL(string: "https://github.com/0xdchu/sitting-time/releases/tag/macos-v\(version)")!
     }
 
     /// Checks for a newer release. Never throws: anything unexpected (no

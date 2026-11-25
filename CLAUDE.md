@@ -42,9 +42,9 @@ sleep or restart, or lost local settings in `state.json`. The implementation rul
   `grep -rnE "Date\.now|performance\.now|setInterval|new Date" src/`
 - No React, Vue, Next.js, Tailwind, state libraries, SQLite, auth, telemetry, remote APIs or a
   backend server (see `AGENTS.md`). A new dependency is a question, not a decision.
-- Git: account `0xdonniechu`, author `0xdonniechu <211609259+0xdonniechu@users.noreply.github.com>`.
+- Git: account `0xdchu`, author `0xdchu <211609259+0xdchu@users.noreply.github.com>`.
   One branch per change (`fix/...`, `feat/...`), merged to `main` only when the owner asks.
-  Remote: `https://github.com/0xdonniechu/sitting-time` (private). Push only when asked.
+  Remote: `https://github.com/0xdchu/sitting-time` (private). Push only when asked.
 
 ## Plane
 - Project `SittingTime` (identifier `SIT`) in workspace `stupidrich`, bound to this folder in local scope.
